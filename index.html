@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gelateria Dolce Gelato</title>
+
+    <!-- CSS Interno -->
+    <style>
+        /* Resetting some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        header {
+            background-color: #fcbf49;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #fcbf49;
+        }
+
+        .hero {
+            background: #fcbf49;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #fcbf49;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .menu {
+            text-align: center;
+            padding: 70px 20px;
+            background-color: #fff;
+        }
+
+        .menu h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .menu-items .item {
+            background-color: #f4f4f9;
+            padding: 20px;
+            border-radius: 10px;
+            width: 22%;
+            text-align: center;
+        }
+
+        .menu-items .item h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .about {
+            text-align: center;
+            padding: 70px 20px;
+            background-color: #fcbf49;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact .form-group label {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .contact .form-group input,
+        .contact .form-group textarea {
+            padding: 10px;
+            font-size: 1rem;
+            width: 100%;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact .form-group textarea {
+            height: 150px;
+        }
+
+        .submit-button {
+            background-color: #fcbf49;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .menu-items {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu-items .item {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Gelateria Dolce Gelato">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">Chi Siamo</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Benvenuti alla Gelateria Dolce Gelato!</h1>
+            <p>Un mondo di gusti artigianali freschi, preparati con amore e passione.</p>
+            <a href="#menu" class="cta-button">Scopri il nostro Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Il Nostro Menu</h2>
+        <div class="menu-items">
+            <div class="item">
+                <h3>Gelato alla Fragola</h3>
+                <p>Un classico gusto fresco e fruttato, preparato con fragole fresche.</p>
+            </div>
+            <div class="item">
+                <h3>Gelato al Cioccolato</h3>
+                <p>Per gli amanti del cioccolato, ricco e cremoso.</p>
+            </div>
+            <div class="item">
+                <h3>Gelato alla Vaniglia</h3>
+                <p>La vaniglia più pura, con un tocco di eleganza e dolcezza.</p>
+            </div>
+            <div class="item">
+                <h3>Gelato al Pistacchio</h3>
+                <p>Gusto ricco e delicato, preparato con pistacchi freschi di alta qualità.</p>
+            </div>
+            <div class="item">
+                <h3>Gelato alla Nutella</h3>
+                <p>Il gusto cremoso e avvolgente della Nutella, il massimo per i golosi!</p>
+            </div>
+            <div class="item">
+                <h3>Gelato alla Stracciatella</h3>
+                <p>Un delizioso gelato alla crema con scaglie di cioccolato fondente.</p>
+            </div>
+            <div class="item">
+                <h3>Gelato alla Menta</h3>
+                <p>Un gusto fresco e rinfrescante, perfetto per l'estate.</p>
+            </div>
+            <div class="item">
+                <h3>Gelato al Caffè</h3>
+                <p>Un gelato ricco e deciso, con il sapore del caffè appena tostato.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Chi Siamo</h2>
+        <p>La Gelateria Dolce Gelato nasce con l'intento di offrire gelato artigianale di qualità, realizzato solo con ingredienti freschi e naturali. Ogni giorno creiamo nuove ricette per soddisfare ogni palato! Lavoriamo con passione per rendere ogni momento speciale con un gelato indimenticabile.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contattaci</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">
